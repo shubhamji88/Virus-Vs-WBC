@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8671179765106816353}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ PrefabInstance:
       objectReference: {fileID: 8671179765106816353}
     - target: {fileID: 2119479165, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: isInfected
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2119479165, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: coughObject
@@ -55,11 +55,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 982aa9eb8a1be1e4a811332415063317, type: 2}
     - target: {fileID: 762279827264046694, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: m_Name
-      value: p3 (2)
+      value: p3
       objectReference: {fileID: 0}
     - target: {fileID: 762279827264046694, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2212510043834762315, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: m_RootOrder
@@ -75,15 +75,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2212510043834762315, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 64.55
+      value: -40.12
       objectReference: {fileID: 0}
     - target: {fileID: 2212510043834762315, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.48
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 2212510043834762315, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.07
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2212510043834762315, guid: d4ae5c2de009bf44cb762138e233c968, type: 3}
       propertyPath: m_LocalRotation.w
