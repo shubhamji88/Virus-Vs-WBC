@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     private string VACCINE_TAG = "Vaccine";
     private bool goingRight = true;
     private PopUp pop;
+    private DeadPopup deadPopup;
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUp>();
+        deadPopup= GameObject.FindGameObjectWithTag("GameManager").GetComponent<DeadPopup>();
         if (SceneManager.GetActiveScene().name == "level1")
             pop.PopUpBox("White Blood Cell", "LEVEL - 1  \n WHO IS THE TRAITOR ???", "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \n OR \n STAY ALIVE TILL 1ST WAVE GETS OVER(30 SEC)", "Don't kill non infected");
         else if (SceneManager.GetActiveScene().name == "level2")
@@ -126,9 +128,7 @@ public class Player : MonoBehaviour
     IEnumerator Dead()
     {
         yield return new WaitForSeconds(1.5f);
-        if (SceneManager.GetActiveScene().name == "level1")
-            SceneManager.LoadScene("level1");
-        else if (SceneManager.GetActiveScene().name == "level2")
-            SceneManager.LoadScene("level1");
+        deadPopup.PopUpBox();
+        
     }
 }
