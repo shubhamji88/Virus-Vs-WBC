@@ -3617,6 +3617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p5
       objectReference: {fileID: 0}
+    - target: {fileID: 5803907790950902042, guid: cf8fb1200478cef4cb8ef648ba756d65, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf8fb1200478cef4cb8ef648ba756d65, type: 3}
 --- !u!1 &221871070
@@ -7552,6 +7556,14 @@ PrefabInstance:
     - target: {fileID: 1652899423967612900, guid: 22ca5e6343277b24c8b77c243ce485d4, type: 3}
       propertyPath: m_Name
       value: p3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652899423967612900, guid: 22ca5e6343277b24c8b77c243ce485d4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803907790950902042, guid: 22ca5e6343277b24c8b77c243ce485d4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22ca5e6343277b24c8b77c243ce485d4, type: 3}
@@ -13596,7 +13608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1110785485}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16017,6 +16029,10 @@ PrefabInstance:
     - target: {fileID: 1652899423967612900, guid: 22ca5e6343277b24c8b77c243ce485d4, type: 3}
       propertyPath: m_Name
       value: p3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803907790950902042, guid: 22ca5e6343277b24c8b77c243ce485d4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22ca5e6343277b24c8b77c243ce485d4, type: 3}
@@ -24854,6 +24870,10 @@ PrefabInstance:
     - target: {fileID: 4440360113113249213, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440360113113249213, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5091987121936859851, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: jumpForce
