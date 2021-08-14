@@ -19,11 +19,12 @@ public class Player : MonoBehaviour
     private string WALK_ANIMATION = "walk";
     private string DIE_ANIMATION = "die";
     private bool isVaccinated = false;
-    private bool isGrounded=true;
+    private bool isGrounded = true;
     private string GROUND_TAG = "Ground";
     private string ENEMY_TAG = "Enemy";
     private string VACCINE_TAG = "Vaccine";
     private bool goingRight = true;
+    private PopUp pop;
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -32,14 +33,11 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
-        PopUp pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUp>();
-        if (SceneManager.GetActiveScene().name == "Game")
+        pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUp>();
+        if (SceneManager.GetActiveScene().name == "level1")
             pop.PopUpBox("White Blood Cell", "LEVEL - 1  \n WHO IS THE TRAITOR ???", "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \n OR \n STAY ALIVE TILL 1ST WAVE GETS OVER(30 SEC)", "Don't kill non infected");
         else if (SceneManager.GetActiveScene().name == "level2")
             pop.PopUpBox("White Blood Cell", "LEVEL - 2 \n stop the infection", "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \n OR \n STAY ALIVE TILL 1ST WAVE GETS OVER(30 SEC)", "Don't kill non infected");
-
-
-
 
     }
 
@@ -53,7 +51,7 @@ public class Player : MonoBehaviour
     void PlayerMoveKeyboard()
     {
         movementX = Input.GetAxisRaw("Horizontal");
-        transform.position +=new Vector3(movementX, 0f, 0f) * Time.deltaTime*moveForce;
+        transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
     }
 
     void AnimatePlayer()
@@ -92,27 +90,34 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        /*if (collision.gameObject.CompareTag("Rotator"))
+        {
+            Debug.Log("POpppppppppppppppppppppp");
+            pop.PopUpBox("White Blood Cell", "LEVEL - 2 \n stop the infection", "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \n OR \n STAY ALIVE TILL 1ST WAVE GETS OVER(30 SEC)", "Don't kill non infected");
+        }*/
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
         }
         if (collision.gameObject.CompareTag(ENEMY_TAG))
         {
-            if (!isVaccinated)
+            Monster enemy = collision.gameObject.GetComponent<Monster>();
+            if (enemy != null && enemy.isInfected)
             {
                 anim.SetTrigger("die");
-                StartCoroutine( Dead());
-                
+                StartCoroutine(Dead());
+
             }
-            else {
+            /*else {
                 
                 Destroy(collision.gameObject);
-            }
-                
+            }*/
+
         }
         if (collision.gameObject.CompareTag(VACCINE_TAG))
         {
-            if (SceneManager.GetActiveScene().name == "Game")
+            Debug.Log("vacineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+            if (SceneManager.GetActiveScene().name == "level1")
                 SceneManager.LoadScene("level2");
             else if (SceneManager.GetActiveScene().name == "level2")
                 SceneManager.LoadScene("level3");
@@ -120,17 +125,10 @@ public class Player : MonoBehaviour
     }
     IEnumerator Dead()
     {
-        yield return new WaitForSeconds(1f);
-        if (SceneManager.GetActiveScene().name == "Game")
-            SceneManager.LoadScene("Game");
+        yield return new WaitForSeconds(1.5f);
+        if (SceneManager.GetActiveScene().name == "level1")
+            SceneManager.LoadScene("level1");
         else if (SceneManager.GetActiveScene().name == "level2")
-            SceneManager.LoadScene("Game");
-        //PopUp pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUp>();
-       // pop.PopUpBox("White Blood Cell", "MissiOn Failed!!", "You are  infected", "");
-
-       // yield return new WaitForSeconds(0.1f);
-        
-
-
+            SceneManager.LoadScene("level1");
     }
 }

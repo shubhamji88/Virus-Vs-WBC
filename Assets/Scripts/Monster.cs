@@ -10,8 +10,7 @@ public class Monster : MonoBehaviour
     private Rigidbody2D myBody;
     public Transform mouth;
     private Animator anim;
-    [SerializeField]
-    private bool isInfected = false;
+    public bool isInfected = false;
     [SerializeField]
     GameObject coughObject;
     private void Awake()
