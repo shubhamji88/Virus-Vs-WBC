@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 92655ee4c71eb664382ac6d9cd628716
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Forest And Giant
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9c2065d1e148a8a48b1e8ffe1a3f99ba, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
