@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -24,7 +25,9 @@ public class Timer : MonoBehaviour
     public void decrementInfected()
     {
         if(numInfected>0)
-        numInfected--;
+            numInfected--;
+        if(numInfected<=0 && (SceneManager.GetActiveScene().name == "level2"))
+            SceneManager.LoadScene("level3");
     }
     // Update is called once per frame
 

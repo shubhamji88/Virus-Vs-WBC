@@ -8708,7 +8708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4807175353935674633, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
       propertyPath: countDownTime
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4807175353935674638, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
       propertyPath: m_Name

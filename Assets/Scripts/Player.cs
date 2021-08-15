@@ -37,9 +37,11 @@ public class Player : MonoBehaviour
         pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUp>();
         deadPopup= GameObject.FindGameObjectWithTag("GameManager").GetComponent<DeadPopup>();
         if (SceneManager.GetActiveScene().name == "level1")
-            pop.PopUpBox("White Blood Cell", "LEVEL - 1  \n WHO IS THE TRAITOR ???", "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \n OR \n STAY ALIVE TILL 1ST WAVE GETS OVER(30 SEC)", "Don't kill non infected");
+            pop.PopUpBox("White Blood Cell", "LEVEL - 1  \n Get your first dose!!", "Hey VaccY !!! YOu are a white blOOd cell whO has nOt received any vaccine dOse yet.  \n MissiOn: TO reach the end pOint and get yOur first vaccine dOse.  \n Challenge: On yOur way tO the vaccine many peOple will cOme but as yOu have nOt received any dOse yet sO it wOuld be impOssible fOr yOu tO differentiate between the infected and nOn infected peOple. ", "Don’t kill nOn infected persOn");
         else if (SceneManager.GetActiveScene().name == "level2")
-            pop.PopUpBox("White Blood Cell", "LEVEL - 2 \n stop the infection", "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \n OR \n STAY ALIVE TILL 1ST WAVE GETS OVER(30 SEC)", "Don't kill non infected");
+            pop.PopUpBox("White Blood Cell", "LEVEL - 2 \n TO the Final DOse", "First DOse is dOne sO nOw yOu(WBC) have the super pOwer Of identifying the already infected persOn(Hint: NOtice the COugh) \n MissiOn: TO reach the end pOint and get yOur final dOse.  \n Challenge: NOn-infected peOple will alsO start getting infected after getting in cOntact with the cOugh drOplets frOm infected peOple. ", "Don’t kill nOn infected persOn");
+        else
+            pop.PopUpBox("White Blood Cell", "LEVEL - 3 \n NOw yOu are Ready", "YOu are fully vaccinated and as a WBC yOu are ready tO fight all the peOple in yOur way. All yOu have tO dO is tO shOOt them. \n MissiOn: TO successfully reach the end Of the pandemic and Win the GAME.  \n Challenge: EveryOne arOund yOu will be infected sO save yOurself frOm them and reach the final pOint ", "Don’t kill nOn infected persOn");
 
     }
 
