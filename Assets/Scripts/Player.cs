@@ -90,12 +90,14 @@ public class Player : MonoBehaviour
         {
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            SoundManagerScript.PlaySound("jumpSound");
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
+
             isGrounded = true;
         }
         if (collision.gameObject.CompareTag(ENEMY_TAG))
