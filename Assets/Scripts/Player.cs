@@ -106,6 +106,7 @@ public class Player : MonoBehaviour
             if (enemy != null && enemy.isInfected)
             {
                 anim.SetTrigger("die");
+                SoundManagerScript.instance.PlaySound("playerdeath");
                 StartCoroutine(Dead());
 
             }

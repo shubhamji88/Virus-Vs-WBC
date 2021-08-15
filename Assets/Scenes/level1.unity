@@ -28126,7 +28126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSrc: {fileID: 2072637276}
-  jump: {fileID: 8300000, guid: 8a5ee6697eb7c194c94b48a57159ef6c, type: 3}
+  jump: {fileID: 8300000, guid: ae7d90d1da8324b43b5e368693579cb3, type: 3}
+  hitenemy: {fileID: 8300000, guid: 31db03183794a66498bf169a0ee7ecd6, type: 3}
+  fire: {fileID: 8300000, guid: 55fc3711f42007f4e91ca49a8771ed13, type: 3}
+  playerdeath: {fileID: 8300000, guid: 996669f52dc841648bffd90a51b8b3e2, type: 3}
 --- !u!82 &2072637276
 AudioSource:
   m_ObjectHideFlags: 0

@@ -16,9 +16,11 @@ public class bulletCont : MonoBehaviour
         Monster enemy = collision.GetComponent<Monster>();
         if (!collision.gameObject.CompareTag("Rotator"))
             Destroy(gameObject);
+            
         if (enemy != null)
         {
             enemy.bulletHit(60);
+            SoundManagerScript.instance.PlaySound("hitenemy");
         }
     }
 

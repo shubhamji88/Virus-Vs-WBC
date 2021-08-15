@@ -22,5 +22,6 @@ public class weapon : MonoBehaviour
     void shoot()
     {
         Instantiate(bullet, firePoint.position, firePoint.rotation);
+        SoundManagerScript.instance.PlaySound("fire");
     }
 }

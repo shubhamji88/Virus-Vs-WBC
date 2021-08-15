@@ -5,7 +5,7 @@ using UnityEngine;
 public  class  SoundManagerScript : MonoBehaviour
 {
     public AudioSource audioSrc;
-    public AudioClip jump;
+    public AudioClip jump, hitenemy, fire, playerdeath;
     private static SoundManagerScript _instance;
     public static SoundManagerScript instance
     {
@@ -34,8 +34,20 @@ public  class  SoundManagerScript : MonoBehaviour
         {
 
             case "jump":
-                Debug.Log("Jump soudn");
+                Debug.Log("Jump sound");
                 audioSrc.PlayOneShot (jump);
+                break;
+            case "hitenemy":
+                Debug.Log("Enemy Death Sound");
+                audioSrc.PlayOneShot(hitenemy);
+                break;
+            case "fire":
+                Debug.Log("Gunfire sound");
+                audioSrc.PlayOneShot(fire);
+                break;
+            case "playerdeath":
+                Debug.Log("Game Over");
+                audioSrc.PlayOneShot(playerdeath);
                 break;
         }
     }

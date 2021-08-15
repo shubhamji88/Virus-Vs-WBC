@@ -20,11 +20,12 @@ public class Bullet : MonoBehaviour {
 		if (enemy != null)
 		{
 			enemy.TakeDamage(damage);
+	        SoundManagerScript.instance.PlaySound("hitenemy");
 		}
 
 		Instantiate(impactEffect, transform.position, transform.rotation);
 
 		Destroy(gameObject);
 	}*/
-	
+
 }
