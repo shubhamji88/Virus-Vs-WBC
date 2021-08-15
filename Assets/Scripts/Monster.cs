@@ -15,11 +15,13 @@ public class Monster : MonoBehaviour
     [SerializeField]
     GameObject coughObject;
     private DeadPopup deadPopup;
+    private Timer timer;
     private void Awake()
     {
         if (SceneManager.GetActiveScene().name == "level1")
             level1 = true;
         deadPopup = GameObject.FindGameObjectWithTag("GameManager").GetComponent<DeadPopup>();
+        timer = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Timer>();
         myBody = GetComponent<Rigidbody2D>();
         speed = 5;
         anim = GetComponent<Animator>();
@@ -32,6 +34,7 @@ public class Monster : MonoBehaviour
         health -= damage;
         if (health < 0)
         {
+            timer.decrementInfected();
             anim.SetTrigger("dead");
             Destroy(gameObject,0.5f);
         }
@@ -43,6 +46,7 @@ public class Monster : MonoBehaviour
         
         if (!isInfected)
         {
+            timer.incrementInfected();
             isInfected = true;
             Instantiate(coughObject, mouth.position, mouth.rotation);
             StartCoroutine(Cough());

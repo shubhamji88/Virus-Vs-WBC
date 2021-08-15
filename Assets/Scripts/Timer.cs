@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
-
+using TMPro;
 public class Timer : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text timerText;
+    public TMP_Text timerText;
     private float startTime;
     public int countDownTime;
+    public int numInfected;
     private DeadPopup deadPopup;
     void Start()
     {
@@ -16,34 +17,29 @@ public class Timer : MonoBehaviour
         StartCoroutine(CountDownStart());
     }
 
-    // Update is called once per frame
-    void Update()
+    public void incrementInfected()
     {
-        /*float t = Time.time - startTime;
-        string min = ((int)t / 60).ToString();
-        float sec = (t % 60);
-        if (sec < 25.0)
-        {
-            timerText.color = Color.white;
-        }
-        else
-        {
-            timerText.color = Color.red;
-        }
-        timerText.text = min + " : " + sec.ToString("f0");*/
-
+        numInfected++;
     }
+    public void decrementInfected()
+    {
+        if(numInfected>0)
+        numInfected--;
+    }
+    // Update is called once per frame
+
     IEnumerator CountDownStart()
     {
         while (countDownTime > 0)
         {
-            timerText.text = countDownTime.ToString() + " sec";
-            if (countDownTime <5)
+            timerText.text = "Infected: " + numInfected + " Time Left: " + countDownTime.ToString() + " sec";
+            if (countDownTime < 5)
             {
                 timerText.color = Color.red;
-            }else if (countDownTime < 15)
+            }
+            else if (countDownTime < 15)
             {
-                timerText.color = Color.yellow;
+                timerText.color = Color.blue;
             }
             else
             {
