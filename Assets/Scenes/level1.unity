@@ -28125,6 +28125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83da73a95f3c1d24cbc566d438d9ea4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSrc: {fileID: 2072637276}
+  jump: {fileID: 8300000, guid: 8a5ee6697eb7c194c94b48a57159ef6c, type: 3}
 --- !u!82 &2072637276
 AudioSource:
   m_ObjectHideFlags: 0

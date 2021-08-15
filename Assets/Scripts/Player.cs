@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
         {
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            SoundManagerScript.PlaySound("jumpSound");
+            SoundManagerScript.instance.PlaySound("jump");
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
