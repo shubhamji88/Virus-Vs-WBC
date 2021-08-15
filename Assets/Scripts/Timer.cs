@@ -12,8 +12,10 @@ public class Timer : MonoBehaviour
     public int countDownTime;
     public int numInfected;
     private DeadPopup deadPopup;
+    private PopUp pop;
     void Start()
     {
+        pop = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PopUp>();
         deadPopup = GameObject.FindGameObjectWithTag("GameManager").GetComponent<DeadPopup>();
         StartCoroutine(CountDownStart());
     }
@@ -26,8 +28,8 @@ public class Timer : MonoBehaviour
     {
         if(numInfected>0)
             numInfected--;
-        if(numInfected<=0 && (SceneManager.GetActiveScene().name == "level2"))
-            SceneManager.LoadScene("level3");
+        if(numInfected<=0 && (SceneManager.GetActiveScene().name == "level3"))
+            pop.PopUpBox("White Blood Cell", "CONGRAUTULATIONS!!", "YOU ARE NOW FULLY VACCINATED!! & And SAVED YOUR BODY FROM VIRUS!! \n ", "Still take all precations to stop the spread!!");
     }
     // Update is called once per frame
 

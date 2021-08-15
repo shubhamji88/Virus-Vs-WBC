@@ -94,11 +94,6 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /*if (collision.gameObject.CompareTag("Rotator"))
-        {
-            Debug.Log("POpppppppppppppppppppppp");
-            pop.PopUpBox("White Blood Cell", "LEVEL - 2 \n stop the infection", "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \n OR \n STAY ALIVE TILL 1ST WAVE GETS OVER(30 SEC)", "Don't kill non infected");
-        }*/
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
@@ -112,15 +107,10 @@ public class Player : MonoBehaviour
                 StartCoroutine(Dead());
 
             }
-            /*else {
-                
-                Destroy(collision.gameObject);
-            }*/
 
         }
         if (collision.gameObject.CompareTag(VACCINE_TAG))
         {
-            //Debug.Log("vacineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
             if (SceneManager.GetActiveScene().name == "level1")
                 SceneManager.LoadScene("level2");
             else if (SceneManager.GetActiveScene().name == "level2")
