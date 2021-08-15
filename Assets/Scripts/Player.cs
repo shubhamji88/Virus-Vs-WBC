@@ -123,6 +123,10 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("level2");
             else if (SceneManager.GetActiveScene().name == "level2")
                 SceneManager.LoadScene("level3");
+            else if (SceneManager.GetActiveScene().name == "level3")
+            {
+                pop.PopUpBox("White Blood Cell", "CONGRAUTULATIONS!!", "YOU ARE NOW FULLY VACCINATED!! \n ", "Still take all precations to stop the spread!!");
+            }
         }
     }
     IEnumerator Dead()
