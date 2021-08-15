@@ -88,9 +88,10 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            SoundManagerScript.instance.PlaySound("jump");
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            SoundManagerScript.instance.PlaySound("jump");
+            
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

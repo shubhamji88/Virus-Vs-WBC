@@ -20711,61 +20711,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 237565765169495857, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 650742654774148797, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 806878856783316841, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1612734598}
-    - target: {fileID: 806878856783316841, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1612734598}
-    - target: {fileID: 806878856783316841, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: resume
-      objectReference: {fileID: 0}
-    - target: {fileID: 1662741707916063560, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985549482768306338, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985549482768306338, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -93
-      objectReference: {fileID: 0}
-    - target: {fileID: 3614533174372339046, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764103811909202765, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Text
-      value: 'HINT: DONT KILL NON INFECTED....'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7337810071206199351, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7391584070835041971, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 7751140951096428294, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
       propertyPath: m_Name
       value: Pop up (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7751140951096428294, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7751140951096428346, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
       propertyPath: m_Pivot.x
@@ -20849,23 +20801,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751140951096428346, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7751140951865575583, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7973370096620558101, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8342440057398961526, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_Text
-      value: "KILL THE Infected peOple BEFORE TIMER RUNS OUT!! \nOR \nSTAY ALIVE
-        TILL 1ST WAVE GETS OVER (30 SEC)"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806511735552345733, guid: 805bda62e6495d347a06e63faab59cb4, type: 3}
-      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -43454,6 +43389,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 26386361998693928, guid: 287482bc972ef6b488307281a83f3952, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -49.493042
+      objectReference: {fileID: 0}
     - target: {fileID: 26386363198790957, guid: 287482bc972ef6b488307281a83f3952, type: 3}
       propertyPath: m_Name
       value: Timer
