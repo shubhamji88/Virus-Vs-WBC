@@ -22,10 +22,14 @@ public class DeadPopup : MonoBehaviour
     {
         Debug.Log("resume");
         Time.timeScale = 1;
+        animator.SetTrigger("close");
         if (SceneManager.GetActiveScene().name == "level1")
             SceneManager.LoadScene("level1");
         else if (SceneManager.GetActiveScene().name == "level2")
             SceneManager.LoadScene("level2");
-        animator.SetTrigger("close");
+        else if (SceneManager.GetActiveScene().name == "level3")
+            SceneManager.LoadScene("level3");
+
     }
+    
 }

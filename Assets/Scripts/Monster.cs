@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Monster : MonoBehaviour
 {
     [HideInInspector]
@@ -11,11 +11,14 @@ public class Monster : MonoBehaviour
     public Transform mouth;
     private Animator anim;
     public bool isInfected = false;
+    private bool level1=false;
     [SerializeField]
     GameObject coughObject;
     private DeadPopup deadPopup;
     private void Awake()
     {
+        if (SceneManager.GetActiveScene().name == "level1")
+            level1 = true;
         deadPopup = GameObject.FindGameObjectWithTag("GameManager").GetComponent<DeadPopup>();
         myBody = GetComponent<Rigidbody2D>();
         speed = 5;
@@ -25,7 +28,7 @@ public class Monster : MonoBehaviour
     public void bulletHit(int damage)
     {
         if(!isInfected)
-            deadPopup.PopUpBox("You killed a non infected person!!");
+            deadPopup.PopUpBox("YOU KILLED A NON INFECTED PERSON!!");
         health -= damage;
         if (health < 0)
         {
@@ -47,7 +50,7 @@ public class Monster : MonoBehaviour
     }
     void Start()
     {
-        if(isInfected)
+        if(isInfected && !level1)
         StartCoroutine(Cough());
     }
 

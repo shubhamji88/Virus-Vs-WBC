@@ -118,7 +118,7 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.CompareTag(VACCINE_TAG))
         {
-            Debug.Log("vacineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+            //Debug.Log("vacineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
             if (SceneManager.GetActiveScene().name == "level1")
                 SceneManager.LoadScene("level2");
             else if (SceneManager.GetActiveScene().name == "level2")

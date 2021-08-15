@@ -5284,6 +5284,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32043535a4dc5aa4b986ebefce0fe0a9, type: 3}
+--- !u!114 &388745817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1191079152588650734, guid: 32043535a4dc5aa4b986ebefce0fe0a9, type: 3}
+  m_PrefabInstance: {fileID: 388745816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &402741095
 GameObject:
   m_ObjectHideFlags: 0
@@ -25188,7 +25199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173586893781001608, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 173586893781001608, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: m_LocalRotation.x
@@ -25196,7 +25207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173586893781001608, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 173586893781001608, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: m_LocalRotation.z
@@ -25208,7 +25219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173586893781001608, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 173586893781001608, guid: 5125574eaaef8fe47bc4c6218cebbe07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -29338,4 +29349,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popUpBox: {fileID: 7751140951096428294, guid: 32043535a4dc5aa4b986ebefce0fe0a9, type: 3}
   animator: {fileID: 1991780873}
-  Text: {fileID: 0}
+  Text: {fileID: 388745817}
