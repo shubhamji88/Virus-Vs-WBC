@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4807175353935674632}
   - component: {fileID: 4807175353935674639}
   - component: {fileID: 4807175353935674633}
+  - component: {fileID: 4807175354133883670}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -63,4 +64,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
-  countDownTime: 45
+  countDownTime: 35
+  numInfected: 3
+--- !u!114 &4807175354133883670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807175353935674638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1b9964db50fbf4cbe1c060c8576b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUpBox: {fileID: 7751140951096428294, guid: 32043535a4dc5aa4b986ebefce0fe0a9, type: 3}
+  animator: {fileID: 0}
+  Text: {fileID: 0}

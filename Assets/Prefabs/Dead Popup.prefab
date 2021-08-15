@@ -343,7 +343,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 0
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PopUp, Assembly-CSharp
+        m_TargetAssemblyTypeName: DeadPopup, Assembly-CSharp
         m_MethodName: resume
         m_Mode: 1
         m_Arguments:
