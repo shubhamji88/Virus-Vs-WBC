@@ -29312,6 +29312,10 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 609821921}
+    - target: {fileID: 4807175353935674633, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
+      propertyPath: countDownTime
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 4807175353935674638, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
       propertyPath: m_Name
       value: GameManager

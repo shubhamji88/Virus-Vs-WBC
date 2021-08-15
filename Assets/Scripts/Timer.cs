@@ -9,8 +9,10 @@ public class Timer : MonoBehaviour
     public Text timerText;
     private float startTime;
     public int countDownTime;
+    private DeadPopup deadPopup;
     void Start()
     {
+        deadPopup = GameObject.FindGameObjectWithTag("GameManager").GetComponent<DeadPopup>();
         StartCoroutine(CountDownStart());
     }
 
@@ -50,5 +52,6 @@ public class Timer : MonoBehaviour
             yield return new WaitForSeconds(1f);
             countDownTime--;
         }
+        deadPopup.PopUpBox("Time's UP!! \n Better Luck next time");
     }
 }
