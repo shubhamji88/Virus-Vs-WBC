@@ -128,7 +128,7 @@ public class Player : MonoBehaviour
     IEnumerator Dead()
     {
         yield return new WaitForSeconds(1.5f);
-        deadPopup.PopUpBox();
+        deadPopup.PopUpBox("You are infected!!");
         
     }
 }

@@ -13,8 +13,10 @@ public class Monster : MonoBehaviour
     public bool isInfected = false;
     [SerializeField]
     GameObject coughObject;
+    private DeadPopup deadPopup;
     private void Awake()
     {
+        deadPopup = GameObject.FindGameObjectWithTag("GameManager").GetComponent<DeadPopup>();
         myBody = GetComponent<Rigidbody2D>();
         speed = 5;
         anim = GetComponent<Animator>();
@@ -22,7 +24,8 @@ public class Monster : MonoBehaviour
 
     public void bulletHit(int damage)
     {
-        
+        if(!isInfected)
+            deadPopup.PopUpBox("You killed a non infected person!!");
         health -= damage;
         if (health < 0)
         {
