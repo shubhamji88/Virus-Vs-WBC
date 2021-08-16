@@ -145,3 +145,4 @@ MonoBehaviour:
   hitenemy: {fileID: 8300000, guid: 31db03183794a66498bf169a0ee7ecd6, type: 3}
   fire: {fileID: 8300000, guid: 55fc3711f42007f4e91ca49a8771ed13, type: 3}
   playerdeath: {fileID: 8300000, guid: 996669f52dc841648bffd90a51b8b3e2, type: 3}
+  timeremaining: {fileID: 8300000, guid: 29358e32d641e6f489cd124c81005f2c, type: 3}

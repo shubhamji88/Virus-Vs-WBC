@@ -41,6 +41,7 @@ public class Timer : MonoBehaviour
             if (countDownTime < 5)
             {
                 timerText.color = Color.red;
+                SoundManagerScript.instance.PlaySound("timeremaining");
             }
             else if (countDownTime < 15)
             {
