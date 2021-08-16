@@ -3357,7 +3357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751140951096428346, guid: 32043535a4dc5aa4b986ebefce0fe0a9, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7751140951096428346, guid: 32043535a4dc5aa4b986ebefce0fe0a9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12455,7 +12455,7 @@ PrefabInstance:
       objectReference: {fileID: 1080065239}
     - target: {fileID: 4807175353935674633, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
       propertyPath: numInfected
-      value: 13
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4807175353935674633, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
       propertyPath: countDownTime
