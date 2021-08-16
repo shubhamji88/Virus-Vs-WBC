@@ -12291,7 +12291,7 @@ PrefabInstance:
       objectReference: {fileID: 1080065239}
     - target: {fileID: 4807175353935674633, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
       propertyPath: numInfected
-      value: 5
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4807175353935674633, guid: 67e262efccdb08647a1029d576e38c06, type: 3}
       propertyPath: countDownTime
