@@ -5,7 +5,7 @@ using UnityEngine;
 public  class  SoundManagerScript : MonoBehaviour
 {
     public AudioSource audioSrc;
-    public AudioClip jump, hitenemy, fire, playerdeath, timeremaining;
+    public AudioClip jump, hitenemy, fire, playerdeath;
     private static SoundManagerScript _instance;
     public static SoundManagerScript instance
     {
@@ -48,10 +48,6 @@ public  class  SoundManagerScript : MonoBehaviour
             case "playerdeath":
                 Debug.Log("Game Over");
                 audioSrc.PlayOneShot(playerdeath);
-                break;
-            case "timeremaining":
-                Debug.Log("Five Seconds Remaining");
-                audioSrc.PlayOneShot(timeremaining);
                 break;
         }
     }
